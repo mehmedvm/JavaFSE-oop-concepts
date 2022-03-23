@@ -1,4 +1,5 @@
 import zoo.Animal;
+import zoo.Duck;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,13 +39,20 @@ public class Main {
         //Animal Lion
 
         //Overloading Methods
-        Animal bear = new Animal();
-        bear.setName("Bear");
-        bear.setAge(5);
+//        Animal bear = new Animal();
+//        bear.setName("Bear");
+//        bear.setAge(5);
+//
+//        System.out.println(bear.getAge());
+//        System.out.println(bear.getAge(bear.getName()));
 
-        System.out.println(bear.getAge());
-        System.out.println(bear.getAge(bear.getName()));
+        //Inheritance
+        Animal donald = new Duck(50,"male","Donald");
+        System.out.println("\n" + donald);
+        System.out.println(donald.swim());
 
-
+        Duck donald2 = new Duck(50,"male","Donald");
+        System.out.println("\n" + donald2);
+        System.out.println(donald2.swim());
     }
 }

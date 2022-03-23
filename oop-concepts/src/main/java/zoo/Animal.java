@@ -23,9 +23,9 @@ public class Animal {
         return age;
     }
 
-    public String getAge(String name) {
-        return ("Name is: " + name + "; Age is: " + getAge());
-    }
+//    public String getAge(String name) {
+//        return ("Name is: " + name + "; Age is: " + getAge());
+//    }
 
     public void setAge(int age) {
         this.age = age;
