@@ -1,11 +1,23 @@
+/* Comments
+    This area for comments
+ */
+
+// Package
 package zoo;
 
-public class Animal {
+//Imports
+import interfaces.ICommunication;
+
+//Class Declaration
+public class Animal implements ICommunication{
 
     //Fields
     private int age;
     private String gender;
     private String name;
+
+    //Method overloading: different parameters and return type
+    //Method overriding: same method signature, different body
 
     //Default Constructor
     public Animal() {
@@ -69,5 +81,11 @@ public class Animal {
                 ", gender='" + gender + '\'' +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    //From ICommunication interface class
+    @Override
+    public String speak() {
+        return null;
     }
 }

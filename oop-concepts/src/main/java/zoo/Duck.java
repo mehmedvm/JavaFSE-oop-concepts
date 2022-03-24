@@ -28,8 +28,6 @@ public class Duck extends Animal{
     }
 
     //toString
-
-
     @Override
     public String toString() {
         return "The Duck's name is: " + getName() +

@@ -1,5 +1,7 @@
 import zoo.Animal;
 import zoo.Duck;
+import zoo.Fish;
+import zoo.Shark;
 
 public class Main {
     public static void main(String[] args) {
@@ -51,8 +53,35 @@ public class Main {
         System.out.println("\n" + donald);
         System.out.println(donald.swim());
 
-        Duck donald2 = new Duck(50,"male","Donald");
+        Duck donald2 = new Duck(5,"male","Donald2");
         System.out.println("\n" + donald2);
         System.out.println(donald2.swim());
+
+        System.out.println("\n-----Shark Class-----");
+        Animal shark1 = new Shark(10,"female","Shark1");
+        System.out.println(shark1);
+        System.out.println(shark1.swim());
+
+        //Fish 1
+        Fish fish1 = new Fish();
+        fish1.setAge(2);
+        fish1.setName("Donald");
+        fish1.setGender("female");
+        System.out.println(fish1);
+
+        //Fish 2
+        Fish fish2 = new Fish(25,true);
+        fish2.setName("Micky");
+        System.out.println(fish2);
+
+        //Fish 3
+        Fish fish3 = new Fish(3,"male","Flapper",25,true);
+        fish3.setName("Nemo");
+        System.out.println(fish3);
+
+
+
+
+
     }
 }
